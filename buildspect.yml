@@ -3,16 +3,13 @@
 version: 0.2
 
 run-as: root
-
+env:
+  secrets-manager:
+    MONGODB_URL: "/mongodb/kunjan-mongodb-url:kunjan-mongodb-url"
 
 phases:
    pre_build:
      commands:
-       - sudo apt update && sudo apt upgrade -y
-       - sudo curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-       - sudo apt install nodejs nginx -y
-       - sudo npm install npm@latest -g
-       - sudo npm install pm2@latest -g
        - echo "kunjan-mongodb-url=$kunjan-mongodb-url" > .env
 
    build:
