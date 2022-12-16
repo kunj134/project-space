@@ -1,5 +1,3 @@
-#buildspec.yml
-
 version: 0.0
 os: linux
 runas: root
@@ -9,13 +7,8 @@ files:
     destination: /home/ubuntu/project-space/*
     overwrite: true
     timeout: 500
-    
+    a
 hooks:
-  BeforeInstall:
-    - location: script/install.sh
-      timeout: 300
-      runas: root
-
 
   ApplicationStop:
     - location: script/stop.sh
