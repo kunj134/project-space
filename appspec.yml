@@ -7,7 +7,7 @@ files:
     destination: /home/ubuntu/project-space/*
     overwrite: true
     timeout: 500
-    a
+    
 hooks:
 
   ApplicationStop:
