@@ -9,8 +9,7 @@ phases:
    pre_build:
      commands:
       - npm install
-      - npm install --save dotenv
-      - echo "kunjan-mongodb-url=$kunjan-mongodb-url" > .env
+      - echo "MONGODB_URI=$kunjan-mongodb-url" > .env
 
 
 artifacts:
