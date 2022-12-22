@@ -8,7 +8,8 @@ env:
 phases:
    pre_build:
      commands:
-      - npm install pm2 -g && pm2 update
+      - sudo apt install npm
+      - sudo npm install pm2 -g && pm2 update
       - echo "kunjan-mongodb-url=$kunjan-mongodb-url" > .env
 
    build:
