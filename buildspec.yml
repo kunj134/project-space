@@ -3,7 +3,7 @@ version: 0.2
 run-as: root
 env:
   secrets-manager:
-    MONGODB_URL: "/mongodb/kunjan-mongodb-url:kunjan-mongodb-url"
+    MONGODB_URI: "/mongodb/kunjan-mongodb-url:kunjan-mongodb-url"
 
 phases:
    pre_build:
