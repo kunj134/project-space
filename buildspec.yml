@@ -8,13 +8,12 @@ env:
 phases:
    pre_build:
      commands:
-      - npm install
       - echo "MONGODB_URI=$MONGODB_URL" > .env
       
-   post_build:
-      commands:
-       - cat app.js
-
+   build:
+     commands: 
+      - npm install
+      
 artifacts:
   files:
     - echo "Upload artifact to bucket for deploy"
