@@ -10,7 +10,8 @@ phases:
      commands:
       - npm install
       - echo "MONGODB_URI=$kunjan-mongodb-url" > .env
-   build:
+      
+   post_build:
       commands:
        - cat app.js
 
