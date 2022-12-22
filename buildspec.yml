@@ -3,13 +3,13 @@ version: 0.2
 run-as: root
 env:
   secrets-manager:
-    MONGODB_URI: "/mongodb/kunjan-mongodb-url:kunjan-mongodb-url"
+    MONGODB_URL: "/mongodb/kunjan-mongodb-url:kunjan-mongodb-url"
 
 phases:
    pre_build:
      commands:
       - npm install
-      - echo "MONGODB_URI=$kunjan-mongodb-url" > .env
+      - echo "MONGODB_URI=$MONGODB_URL" > .env
       
    post_build:
       commands:
