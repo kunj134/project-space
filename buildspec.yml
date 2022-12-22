@@ -9,6 +9,7 @@ phases:
    pre_build:
      commands:
       - npm install
+      - npm install --save dotenv
       - echo "kunjan-mongodb-url=$kunjan-mongodb-url" > .env
       
       - sed -i "s|mongodb://localhost/conduit|$kunjan-mongodb-url|" app.js
