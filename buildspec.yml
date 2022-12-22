@@ -8,13 +8,11 @@ env:
 phases:
    pre_build:
      commands:
-      - npm install pm2 -g
+      - npm install
       - echo "kunjan-mongodb-url=$kunjan-mongodb-url" > .env
-
-   build:
-     commands:
-        - echo "build application"
-        
+      
+      - sed -i "s|mongodb://localhost/conduit|$kunjan-mongodb-url|" app.js
+      - cat app.js
 
 artifacts:
   files:
