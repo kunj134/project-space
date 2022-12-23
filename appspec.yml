@@ -9,10 +9,6 @@ files:
     timeout: 500
     
 hooks:
-  ApplicationInstall:
-  - location: scripts/install.sh
-      timeout: 300
-      runas: root
       
   ApplicationStop:
     - location: scripts/stop.sh
