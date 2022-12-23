@@ -1,2 +1,2 @@
 #!/bin/bash
-npm install -g pm2@latest 
+sudo npm install pm2@latest -g
