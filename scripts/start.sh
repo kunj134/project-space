@@ -1,3 +1,3 @@
 #!/bin/bash
-cd $HOME/project-space/
+cd /home/ubuntu/project-space/
 pm2 start app.js
