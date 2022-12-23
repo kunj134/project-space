@@ -9,9 +9,8 @@ phases:
    pre_build:
      commands:
       - echo "MONGODB_URI=$MONGODB_URL" > .env
-      - npm install -g pm2@latest
-      - npm install -g pm2@latest
-      
+      - npm install
+
    build:
      commands: 
       - echo "build stage"
